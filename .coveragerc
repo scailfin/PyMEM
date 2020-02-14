@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = src/libname
+source = src/pymela
 
 [report]
 exclude_lines =

@@ -1,5 +1,5 @@
-import libname
+import pymela
 
 
 def test_import():
-    assert libname
+    assert pymela

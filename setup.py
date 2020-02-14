@@ -21,16 +21,16 @@ extras_require = {
 extras_require["complete"] = sorted(set(sum(extras_require.values(), [])))
 
 setup(
-    name="libname",
+    name="pymela",
     version="0.0.1",
-    description="A template repository for a modern Python library",
+    description="Pure-Python Matrix Element Likelihood Analysis",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/matthewfeickert/python-library-template",
-    author="Author Name",
-    author_email="author.name@email.com",
+    url="https://github.com/scailfin/pyMELA",
+    author="Matthew Feickert",
+    author_email="matthew.feickert@cern.ch",
     license="Apache",
-    keywords="python template",
+    keywords="python physics matrix-element",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -43,5 +43,5 @@ setup(
     install_requires=["click>=6.0"],
     python_requires=">=3.6",
     extras_require=extras_require,
-    entry_points={"console_scripts": ["libname=libname.commandline:libname"]},
+    entry_points={"console_scripts": ["pymela=pymela.commandline:pymela"]},
 )
