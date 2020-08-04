@@ -2,7 +2,7 @@
 
 Pure-Python Matrix Element Likelihood Analysis
 
-[![GitHub Actions Status](https://github.com/scailfin/pyMELA/workflows/CI/CD/badge.svg)](https://github.com/scailfin/pyMELA/actions)
+[![GitHub Actions Status: CI](https://github.com/scailfin/pyMELA/workflows/CI/badge.svg?branch=master)](https://github.com/scailfin/pyMELA/actions?query=workflow%3ACI+branch%3Amaster)
 [![Code Coverage](https://codecov.io/gh/scailfin/pyMELA/graph/badge.svg?branch=master)](https://codecov.io/gh/scailfin/pyMELA?branch=master)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/scailfin/pyMELA.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/scailfin/pyMELA/latest/files/)
 [![CodeFactor](https://www.codefactor.io/repository/github/scailfin/pyMELA/badge)](https://www.codefactor.io/repository/github/scailfin/pyMELA)
