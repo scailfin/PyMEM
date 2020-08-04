@@ -41,3 +41,29 @@ jobs:
         token: ${{ secrets.CODECOV_TOKEN }}
         file: ./coverage.xml
         flags: unittests
+
+  docker:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Docker image
+      uses: docker/build-push-action@v1
+      with:
+        repository: scailfin/pymela
+        dockerfile: docker/Dockerfile
+        tags: test
+        tag_with_sha: true
+        tag_with_ref: true
+        push: false
+    - name: List built images
+      run: docker images
+    - name: Run CLI API check
+      run: |
+        printf "\npymela\n"
+        docker run --rm scailfin/pymela:test
+        printf "\npymela --version\n"
+        docker run --rm scailfin/pymela:test --version
+        printf "\npymela --help\n"
+        docker run --rm scailfin/pymela:test --help
