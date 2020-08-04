@@ -24,4 +24,4 @@ RUN apt-get -qq -y update && \
     apt-get -y autoremove && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local /usr/local
-ENTRYPOINT ["/usr/local/bin/pymela"]
+ENTRYPOINT ["pymela"]
