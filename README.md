@@ -13,5 +13,7 @@ Pure-Python Matrix Element Likelihood Analysis
 
 [![PyPI version](https://badge.fury.io/py/pymela.svg)](https://badge.fury.io/py/pymela)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/pymela.svg)](https://pypi.org/project/pymela/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/scailfin/pymela)](https://hub.docker.com/r/scailfin/pymela)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/scailfin/pymela/latest)](https://hub.docker.com/r/scailfin/pymela/tags?name=latest)
 
 pyMELA provides matrix element analysis tools that are accelerated using machine learning.
