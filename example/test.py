@@ -30,7 +30,7 @@ def main():
     alphas = 0.13
 
     ans = allmatrix2py.smatrixhel(pdgs, p, alphas, scale2, nhel)
-    print(ans)
+    print(f"matrix element is: {ans}")
 
 
 if __name__ == "__main__":

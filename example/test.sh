@@ -8,7 +8,9 @@ if [[ ! -d ttbar_output ]]; then
   fi
 fi
 cd ttbar_output/SubProcesses
-make allmatrix2py.so
+if [[ ! -f allmatrix2py.cpython-38-x86_64-linux-gnu.so ]]; then
+  make allmatrix2py.so
+fi
 # cd ../../
 # ls -lhtra
 cp ../../test.py .
