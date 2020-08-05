@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # echo $PWD
-pip install numpy
 if [[ ! -d ttbar_output ]]; then
   if [[ -f ttbar.mg5 ]]; then
     mg5_aMC ttbar.mg5
