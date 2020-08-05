@@ -4,6 +4,9 @@
 if [[ ! -d ttbar_output ]]; then
   if [[ -f ttbar.mg5 ]]; then
     mg5_aMC ttbar.mg5
+    # Clean unnecessary auxilary output files
+    rm nsqso_born.inc
+    rm py.py
   fi
 fi
 # compile FORTRAN and wrap it in Python
