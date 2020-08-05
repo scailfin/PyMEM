@@ -1,0 +1,2 @@
+generate p p > t t~
+output standalone ttbar_output --prefix=int
