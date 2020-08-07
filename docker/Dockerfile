@@ -1,5 +1,4 @@
-ARG BASE_IMAGE=python:3.8-slim
-docker pull scailfin/madgraph5-amc-nlo:mg5_amc2.7.0-python3
+ARG BASE_IMAGE=scailfin/madgraph5-amc-nlo:mg5_amc2.7.0-python3
 # hadolint ignore=DL3006
 FROM ${BASE_IMAGE} as base
 
