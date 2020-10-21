@@ -25,9 +25,13 @@ def main():
     pdg_ids = [21, 21, 6, -6]  # g, g, t, t~
     scale2 = 0.0  # only used for loop matrix element. should be set to 0 for tree-level
     alphas = 0.13
+    proc_id = 0  # What is PROCID?
 
+    # result = allmatrix2py.smatrixhel(
+    #     pdg_ids, transposed_momenta, alphas, scale2, n_helicity
+    # )
     result = allmatrix2py.smatrixhel(
-        pdg_ids, transposed_momenta, alphas, scale2, n_helicity
+        pdg_ids, proc_id, transposed_momenta, alphas, scale2, n_helicity
     )
     print(f"matrix element is: {result}")
 
