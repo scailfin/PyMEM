@@ -11,7 +11,8 @@ if [[ ! -d ttbar_output ]]; then
 fi
 # compile FORTRAN and wrap it in Python
 cd ttbar_output/SubProcesses
-if [[ ! -f allmatrix2py.cpython-38-x86_64-linux-gnu.so ]]; then
+# if [[ ! -f allmatrix2py.cpython-38-x86_64-linux-gnu.so ]]; then #MadGraph5 v2.7
+if [[ ! -f all_matrix2py.cpython-38-x86_64-linux-gnu.so ]]; then
   make allmatrix2py.so
 fi
 # Navigate to top level of process directory structure (same level as Cards/)

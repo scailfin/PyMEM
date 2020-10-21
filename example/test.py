@@ -27,6 +27,7 @@ def main():
     alphas = 0.13
     proc_id = 0  # What is PROCID?
 
+    # MadGraph5 v2.7
     # result = allmatrix2py.smatrixhel(
     #     pdg_ids, transposed_momenta, alphas, scale2, n_helicity
     # )
